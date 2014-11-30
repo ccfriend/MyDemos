@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyDemos</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- =============================== -->
+    <!--  activity examples strings  -->
+    <!-- =============================== -->
+    
+    <!-- /: using to indicate a sub page; b :  bold; i:  italic -->    
+    <string name="activity_hello_world">App/<b>Hello <i>World</i></b></string>
+    <string name="hello_world"><b>Hello, <i>World!</i></b></string>
+    
+    <string name="activity_view_pager_demo">View/ViewPagerDemo</string>
+    
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mydemos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:supportsRtl="true">
+        
+        <activity
+            android:name=".MyDemos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- ************************************* -->
+        <!--      APPLICATION PACKAGE SAMPLES      -->
+        <!-- ************************************* -->
+
+        <!-- Activity Samples -->
+
+        <activity android:name=".app.HelloWorld" android:label="@string/activity_hello_world">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+                
+
+        <!-- ************************************* -->
+        <!--      VIEW PACKAGE SAMPLES      -->
+        <!-- ************************************* -->
+
+        <!-- Activity Samples -->
+
+        <activity android:name=".view.ViewPagerDemo" android:label="@string/activity_view_pager_demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+                
+    </application>
+
+</manifest>
