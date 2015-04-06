@@ -6,13 +6,21 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="20" />
+        android:targetSdkVersion="21" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" 
         android:supportsRtl="true">
         
         <activity
@@ -37,8 +45,27 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE" />
             </intent-filter>
         </activity>
-                
+        
+        <activity android:name=".app.AvailableIntentsTest" android:label="@string/activity_filter_intent_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>        
 
+        <activity android:name=".app.MediaPlayerDemo" android:label="@string/activity_media_player">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name=".app.MediaPlayerDemo_Audio">
+        </activity>
+
+        <activity android:name=".media.MediaPlayerDemo_Video">
+        </activity>
+        
         <!-- ************************************* -->
         <!--      VIEW PACKAGE SAMPLES      -->
         <!-- ************************************* -->
@@ -51,7 +78,61 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".view.PreferenceTest" android:label="@string/activity_preference_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".view.RingtonePickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MYPICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
                 
+        <activity android:name=".view.RingtonePickerTest" android:label="@string/activity_ringpicker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>         
+
+        <!-- ************************************* -->
+        <!--      GAME PACKAGE SAMPLES      -->
+        <!-- ************************************* -->
+
+        <!-- Activity Samples -->
+
+        <activity android:name=".hellogamecontrol.GameViewActivity" android:label="@string/activity_hello_game">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- ************************************* -->
+        <!--      SERVICE SAMPLES      -->
+        <!-- ************************************* -->
+
+        <!-- Activity Samples -->
+
+        <activity android:name=".service.TestServiceActivity" android:label="@string/activity_test_service">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name=".service.MyLocalService"
+            	 android:enabled="true">           
+        </service>
+        
+        <service android:name=".service.MyRemoteService"
+            	 android:enabled="true">           
+        </service>
     </application>
 
 </manifest>

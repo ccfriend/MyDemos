@@ -34,15 +34,24 @@ public class ViewPagerDemo extends Activity implements ActionBar.TabListener {
 
         setContentView(R.layout.view_pager_demo);
         
-        final ActionBar bar = getActionBar();
-        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        
-        
+               
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mAdapter = new MyPagerAdapter(getFragmentManager());
         
         mViewPager.setAdapter(mAdapter);
         mViewPager.setOnPageChangeListener(mAdapter);
+        
+        
+        final ActionBar bar = getActionBar();
+        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        
+        bar.addTab(bar.newTab()
+                .setText("Simple")
+                .setTabListener(this));
+        bar.addTab(bar.newTab()
+                .setText("Contacts")
+                .setTabListener(this));
+
              
         
     }
@@ -61,7 +70,7 @@ public class ViewPagerDemo extends Activity implements ActionBar.TabListener {
         	case TAB_INDEX_ONE:
         		return new ArrayListFragment();
         	case TAB_INDEX_TWO:
-        		return new ContextMenuFragment();
+        		return new ArrayListFragment();
         	}
         	throw new IllegalStateException("No fragment at position " + position);  
         }

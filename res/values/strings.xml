@@ -4,6 +4,17 @@
     <string name="app_name">MyDemos</string>
     <string name="action_settings">Settings</string>
 
+    <string name="no_content">no contents</string> 
+    <string name="set_silent">set_silent</string>
+    
+    <string name="alarm_tone">alarm_tone</string>
+    <string name="notification_tone">notification_tone</string>
+    <string name="record_tone">record_tone</string>
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="sd_music">sd_music</string>
+    <string name="sys_tone">sys_tone</string>
+    
+    
     <!-- =============================== -->
     <!--  activity examples strings  -->
     <!-- =============================== -->
@@ -13,5 +24,35 @@
     <string name="hello_world"><b>Hello, <i>World!</i></b></string>
     
     <string name="activity_view_pager_demo">View/ViewPagerDemo</string>
+
+    <string name="activity_preference_test">View/PreferenceTest</string>
+    
+    <string name="activity_ringpicker">View/RingPicker</string>
+    
+    <string name="activity_filter_intent_test">App/AvailableIntentsTest</string>
+    
+    <string name="activity_media_player">App/MediaPlayerDemo</string>
+    
+    <string name="pref_icon_decor_title">Icon Background Setting</string>
+    <string name="pref_icon_decor_0">No Background</string>
+    <string name="pref_icon_decor_01">Simple</string>
+    <string name="pref_icon_decor_02">Suspension</string>
+    <string name="pref_icon_decor_03">Colorful Round</string>
+    <string name="pref_icon_decor_04">Transparent Ring</string>
+    <string name="pref_icon_decor_05">Projection Cloth</string>
+    
+    <string name="activity_hello_game">HelloGameControl</string>    
+    
+    <string name="activity_test_service">Service/TestService</string>
+        
+    <string name="service_test">service test</string>
+    <string name="start_service">start service</string>
+    <string name="stop_service">stop service</string>
+    <string name="bind_service">bind_service</string>
+    <string name="unbind_service">unbind_service</string>
+    <string name="kill_process">kill_process</string>
+    
+    
+    
     
 </resources>

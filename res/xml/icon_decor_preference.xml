@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:scaleType="center"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:id="@+id/icon_decor_preference_img"/>
+    
+<!--     <TextView -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:textSize="20sp" -->
+<!--         android:paddingLeft="20dp" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_toRightOf="@id/icon_decor_preference_img" -->
+<!--         android:id="@+id/icon_decor_preference_text"/> -->
+    
+<!--     <RadioButton  -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:paddingRight="20dp" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:id="@+id/icon_decor_preference_button"/> -->
+    
+    <CheckedTextView
+        android:id="@+id/icon_decor_preference_button"
+        android:layout_toRightOf="@id/icon_decor_preference_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_alignParentRight="true" 
+        android:textSize="20sp"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:ellipsize="marquee"
+        android:paddingRight="20dp"
+    />	 
+    
+
+</RelativeLayout>
