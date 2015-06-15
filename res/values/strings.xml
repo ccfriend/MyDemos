@@ -43,6 +43,9 @@
     
     <string name="activity_hello_game">HelloGameControl</string>    
     
+    <string name="activity_http_connection">Net/HttpConnection</string>    
+    
+    
     <string name="activity_test_service">Service/TestService</string>
         
     <string name="service_test">service test</string>

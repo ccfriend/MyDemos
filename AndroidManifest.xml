@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     
     <application
@@ -100,6 +101,19 @@
             </intent-filter>
         </activity>         
 
+        <!-- ************************************* -->
+        <!--      NET PACKAGE SAMPLES      -->
+        <!-- ************************************* -->
+
+        <!-- Activity Samples -->
+
+        <activity android:name=".net.HttpConnection" android:label="@string/activity_http_connection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+                
         <!-- ************************************* -->
         <!--      GAME PACKAGE SAMPLES      -->
         <!-- ************************************* -->
