@@ -80,6 +80,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".view.ViewPagerDemo2" android:label="@string/activity_view_pager_demo2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+                
         <activity android:name=".view.PreferenceTest" android:label="@string/activity_preference_test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

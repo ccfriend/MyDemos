@@ -1,4 +1,6 @@
 package com.example.mydemos.view;
+
+import com.example.mydemos.R;
 import android.os.Bundle;
 import android.app.ListFragment;
 import android.view.View;

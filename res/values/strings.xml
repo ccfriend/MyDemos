@@ -25,6 +25,8 @@
     
     <string name="activity_view_pager_demo">View/ViewPagerDemo</string>
 
+    <string name="activity_view_pager_demo2">View/ViewPagerDemo2</string>
+    
     <string name="activity_preference_test">View/PreferenceTest</string>
     
     <string name="activity_ringpicker">View/RingPicker</string>
